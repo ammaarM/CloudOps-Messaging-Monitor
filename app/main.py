@@ -10,7 +10,7 @@ class Event(BaseModel):
     event_type: str
     payload: dict
 
-RABBITMQ_URL = "amqp://guest:guest@rabbitmq/"
+RABBITMQ_URL = "amqp://guest:guest@localhost/"
 
 @app.post("/event")
 async def publish_event(event: Event):

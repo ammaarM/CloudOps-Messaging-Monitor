@@ -3,8 +3,8 @@ import aio_pika
 import json
 from pymongo import MongoClient
 
-RABBITMQ_URL = "amqp://guest:guest@rabbitmq/"
-MONGO_URI = "mongodb://mongodb:27017"
+RABBITMQ_URL = "amqp://guest:guest@localhost/"
+MONGO_URI = "mongodb://localhost:27017"
 
 async def main():
     client = MongoClient(MONGO_URI)
